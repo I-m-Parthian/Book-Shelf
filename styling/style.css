@@ -1,0 +1,41 @@
+/*************** Header Styling *****************/
+h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+}
+
+.back-button{
+  /* make it left aligned  */
+  margin:3% 0;
+}
+
+.add-button{
+/* make it right aligned */
+/* use postioning as explained by angela */
+}
+
+/*************** Index Page box content Syling *****************/
+.box{
+
+}
+
+.polaroid {
+  width: 275px;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+img{
+  height: 275px;
+  width: 275px;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.image-text {
+  text-align: center;
+  padding: 2px;
+}
