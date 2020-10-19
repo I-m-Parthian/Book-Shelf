@@ -19,14 +19,14 @@
               while ($row = mysqli_fetch_assoc($result)) {
                 echo '
                 <div class="col-lg-3 col-md-4 col-sm-6 " >
-                  <div class="polaroid" >
+                  <div class="polaroid" onclick=" window.location.href = \'details-page.php?id='.$row["book_id"].' \';">
                     <img src="Book-images/'.$row["image_name"].'" alt="Book-Image">
                     <div class="image-text">
                       <h6 >'.$row["book_name"].'</h6>
                       <sub>Book by '.$row["author_name"].'</sub>
                     </div>
                   </div>
-                </div>                
+                </div>
                 ';
               }
           }

@@ -1,0 +1,16 @@
+Home page
+
+1. add margins b/w divs in case of small devices
+2. Redirect to details page on clicking divs.
+
+
+Details page
+
+1. Display Book details where Boo_id matches divs id.
+2. If book added successfully display alert msg.
+
+
+Book adding form
+
+1. dont input empty form
+2. Redirect to details page on successful input else display error msg.
