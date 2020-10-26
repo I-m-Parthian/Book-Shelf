@@ -17,6 +17,8 @@
 
   <!-- Button to Go back to home page -->
   <a class="btn btn-outline-primary back-button" role="button" href="index.php">◀️ Back</a>
+
+  <!-- Form to take input -->
   <div id="details-form" style="margin-top:1%">
     <form method="post" action="includes/upload.php" enctype="multipart/form-data" >
 

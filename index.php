@@ -4,9 +4,10 @@
 
   <div class="container">
     <!-- Button to Add new book -->
-    <div>
+    <div class="buttons">
       <a class="btn btn-outline-primary" role="button" href="Books-adding-form.php">&#8853 New Book </a>
     </div>
+
     <!-- Books Display -->
     <div class="row" style="margin:1% 0;">
         <?php
@@ -15,7 +16,7 @@
           $sql = "SELECT * FROM books ORDER BY book_id;";
           $result = mysqli_query($conn, $sql);
           $resultcheck = mysqli_num_rows($result);
-
+          // Fetching data from database
           if ($resultcheck > 0) {
               while ($row = mysqli_fetch_assoc($result)) {
                 echo '
