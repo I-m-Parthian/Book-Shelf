@@ -3,12 +3,14 @@
 ?>
 <div class="container">
   <?php
-
-  if(isset($_GET['fail'])){
-    echo '<div class="alert alert-success">Book Added Successfully</div>';
-  }
-  else if(isset($_GET['upload'])){
-    echo '<div class="alert alert-danger">Please fill details correctly</div>';
+  if(isset($_GET['upload'])) {
+    $val = $_GET['upload'];
+    if($val == 'success'){
+      echo '<div class="alert alert-success">Book Added Successfully</div>';
+    }
+    else if($val == 'fail'){
+      echo '<div class="alert alert-danger">Please fill all neccessory details</div>';
+    }
   }
   ?>
 
