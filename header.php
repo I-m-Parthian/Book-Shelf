@@ -8,7 +8,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>BookShelf's home-page</title>
+  <title>BookShelf</title>
 
   <!--favicon -->
   <link rel="shortcut icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/whatsapp/238/books_1f4da.png">
@@ -24,7 +24,3 @@
   <!-- Bootsrap Scripts -->
 
 </head>
-
-<body>
-  <h1 class="text-center text-primary">Book-Shelf</h1>
-  <hr>
