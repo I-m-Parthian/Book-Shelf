@@ -19,7 +19,7 @@
     <div class="form-label-group">
       <input type="email" class="form-control mb-4" name="useremail" placeholder="Email address">
       <input type="password" class="form-control mb-4" name="userpasswrd" placeholder="Password">
-      <input type="submit" class="btn btn-primary btn-block" name="submit" value="Sign In">
-    </div>
+      <input type="submit" class="btn btn-success btn-block" name="submit" value="Sign In">
+      </div>
   </form>
 </body>

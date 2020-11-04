@@ -21,6 +21,5 @@
 
   <!-- custom styling -->
   <link rel="stylesheet" href="styling/style.css">
-  <!-- Bootsrap Scripts -->
 
 </head>

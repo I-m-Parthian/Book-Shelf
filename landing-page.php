@@ -2,6 +2,9 @@
   include "header.php"
 ?>
 
+<body>
+  <h1 class="text-center text-primary">Book-Shelf</h1>
+  <hr>
   <div class="container">
     <!-- Button to Add new book -->
     <div class="buttons">
