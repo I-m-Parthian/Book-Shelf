@@ -13,17 +13,21 @@
       $result = mysqli_query($conn,$sql);
 
       if(isset($result)) {
+        //1
         $row = mysqli_fetch_assoc($result);
-        if($row['user_role']=='Admin') {
-          header('Location: ../admin-dashboard.php');
+        if($row['passwrd']==$passwrd && $row['user_role']=='Admin'){
+            header('Location: ../admin-dashboard.php');
         }
-        else if($row['user_role']=='Reader'){
-          header('Location: ../reader-dashboard.php');
+        else if($row['passwrd']==$passwrd && $row['user_role']=='Reader'){
+            header('Location: ../reader-dashboard.php');
+        }
+        else{
+          header('Location: ../index.php?signin=fail');
         }
       }
     }
   }
   else{
-    header('Location: ../index.php?signup=fail');
+    header('Location: ../index.php?signin=fail');
   }
  ?>

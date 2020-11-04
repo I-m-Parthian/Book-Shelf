@@ -17,9 +17,6 @@
         <div class="dropdown-menu" aria-labelledby="bookDropdown">
           <a class="dropdown-item" href="Books-adding-form.php">Add a book</a>
           <a class="dropdown-item" href="landing-page.php">Delete/Edit a book</a>
-          <a class="dropdown-item" href="#">Manage a book count</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
 
