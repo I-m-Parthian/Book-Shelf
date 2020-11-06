@@ -3,13 +3,8 @@
 ?>
 
 <body>
-  <h1 class="text-center text-primary">Book-Shelf</h1>
-  <hr>
+  <?php require 'navigationBar.php' ?>
   <div class="container">
-    <!-- Button to Add new book -->
-    <div class="buttons">
-      <a class="btn btn-outline-primary" role="button" href="Books-adding-form.php">&#8853 New Book </a>
-    </div>
 
     <!-- Books Display -->
     <div class="row" style="margin:1% 0;">
@@ -21,19 +16,19 @@
           $resultcheck = mysqli_num_rows($result);
           // Fetching data from database
           if ($resultcheck > 0) {
-              while ($row = mysqli_fetch_assoc($result)) {
-                echo '
-                <div class="col-lg-3 col-md-4 col-sm-6 box" >
-                  <div class="polaroid" onclick=" window.location.href = \'details-page.php?book_id='.$row["book_id"].' \';">
-                    <img class="box-image" src="Book-images/'.$row["image_name"].'" alt="Book-Image">
-                    <div class="image-text">
-                      <h6 >'.$row["book_name"].'</h6>
-                      <sub>Book by '.$row["author_name"].'</sub>
-                    </div>
+            while ($row = mysqli_fetch_assoc($result)) {
+              echo '
+              <div class="col-lg-3 col-md-4 col-sm-6 box" >
+                <div class="polaroid" onclick=" window.location.href = \'details-page.php?book_id='.$row["book_id"].' \';">
+                  <img class="box-image" src="Book-images/'.$row["image_name"].'" alt="Book-Image">
+                  <div class="image-text">
+                    <h6 >'.$row["book_name"].'</h6>
+                    <sub>Book by '.$row["author_name"].'</sub>
                   </div>
                 </div>
-                ';
-              }
+              </div>
+              ';
+            }
           }
          ?>
 
@@ -70,6 +65,7 @@
          </div>
     </div>
   </div>
+  <?php require 'footer.php'; ?>
 </body>
 
 </html>

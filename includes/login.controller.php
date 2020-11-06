@@ -1,10 +1,19 @@
 <?php
   include_once 'dbh.php';
+  if(isset($_SESSION['loggedIn'])){
+    die('hello');
+    if ($_SESSION['role'] == 'Reader') {
+      header("location: ../readerDashboard.php");
+   } else if ($_SESSION['user_type'] == 'Admin') {
+      header("location:/adminDashboard.php");
+   }
 
+  }
   if(isset($_POST['submit'])) {
     $username = $_POST['useremail'];
-    $passwrd = $_POST['userpasswrd'];
-    if(empty($username)||empty($passwrd)) {
+    $password = $_POST['userpasswrd'];
+    $role = 'Admin';
+    if(empty($username)||empty($password)) {
       header('Location: ../index.php?signin=fail');
     }
     else{
@@ -13,12 +22,13 @@
       $result = mysqli_query($conn,$sql);
 
       if(isset($result)) {
-        //1
+
         $row = mysqli_fetch_assoc($result);
-        if($row['passwrd']==$passwrd && $row['user_role']=='Admin'){
-            header('Location: ../admin-dashboard.php');
+        if($row['password']==$password && $row['user_role']=='Admin'){
+            require_once 'sessionHandler.php';
+
         }
-        else if($row['passwrd']==$passwrd && $row['user_role']=='Reader'){
+        else if($row['password']==$password && $row['user_role']=='Reader'){
             header('Location: ../reader-dashboard.php');
         }
         else{

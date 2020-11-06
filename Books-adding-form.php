@@ -2,8 +2,7 @@
   include "header.php"
 ?>
 <body>
-  <h1 class="text-center text-primary">Book-Shelf</h1>
-  <hr>
+  <?php require 'navigationBar4admin.php' ?>
   <div class="container">
     <?php
     if(isset($_GET['upload'])) {
@@ -52,7 +51,7 @@
     </div>
 
   </div>
-
+  <?php require 'footer.php'; ?>
 </body>
 
 </html>

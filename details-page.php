@@ -3,15 +3,8 @@
 ?>
 
 <body>
-  <h1 class="text-center text-primary">Book-Shelf</h1>
-  <hr>
-  <div class="container">
-    <!-- Button to Add new book -->
-    <div class="buttons">
-      <a class="btn btn-outline-primary back-button" role="button" href="index.php">◀️ Back</a>
-      <a class="btn btn-outline-primary" role="button" href="Books-adding-form.php">&#8853 New Book </a>
-    </div>
     <?php
+      require 'navigationBar4admin.php';
       if(isset($_GET['book_id'])) {
 
         include_once "includes/dbh.php";
@@ -64,7 +57,7 @@
           </div>
           ';
       }
-
+      require 'footer.php';
       ?>
 </body>
 
