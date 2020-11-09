@@ -1,14 +1,13 @@
 <?php
-  include "header.php"
+  require '../layouts/header.php';
+  require '../layouts/navigationBar.php';
 ?>
 
-<body>
-  <?php require 'navigationBar.php' ?>
   <div class="container">
 
-    <!-- Books Display -->
+    <!-- Books Display using data base place this in model section-->
     <div class="row" style="margin:1% 0;">
-        <?php
+        <!-- <?php
           include_once "includes/dbh.php";
 
           $sql = "SELECT * FROM books ORDER BY book_id;";
@@ -30,13 +29,14 @@
               ';
             }
           }
-         ?>
+         ?> -->
 
          <!------------- Sample Books --------------->
 
          <div class="col-lg-3 col-md-4 col-sm-6 box" >
            <div class="polaroid" onclick="window.location.href ='details-page.php'">
-             <img class="box-image" src="Book-images/sample-image.jpeg" alt="Book-Image">
+             <img class="box-image" src="../../Book-images/sample-image.jpeg" alt="Book-Image">
+             <div class="top-right">Copies:1</div>
              <div class="image-text">
                <h6>Sample Name</h6>
                <sub>Book by Author Name</sub>
@@ -46,7 +46,8 @@
 
          <div class="col-lg-3 col-md-4 col-sm-6 box" >
            <div class="polaroid" onclick="window.location.href ='details-page.php'">
-             <img class="box-image" src="Book-images/sample-image.jpeg" alt="Book-Image">
+             <img class="box-image" src="../../Book-images/sample-image.jpeg" alt="Book-Image">
+             <div class="top-right">Number of Copies:1</div>
              <div class="image-text">
                <h6>Sample Name</h6>
                <sub>Book by Author Name</sub>
@@ -56,7 +57,8 @@
 
          <div class="col-lg-3 col-md-4 col-sm-6 box" >
            <div class="polaroid" onclick="window.location.href ='details-page.php'">
-             <img class="box-image" src="Book-images/sample-image.jpeg" alt="Book-Image">
+             <img class="box-image" src="../../Book-images/sample-image.jpeg" alt="Book-Image">
+             <div class="top-right">Number of Copies:1</div>
              <div class="image-text">
                <h6>Sample Name</h6>
                <sub>Book by Author Name</sub>
@@ -65,7 +67,4 @@
          </div>
     </div>
   </div>
-  <?php require 'footer.php'; ?>
-</body>
-
-</html>
+<?php require '../layouts/footer.php'; ?>

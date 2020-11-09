@@ -1,37 +1,9 @@
-<?php require 'header.php' ?>
+<?php
+  require '../layouts/header.php';
+  require '../layouts/navigationBar.php';
+?>
 
-<body>
-  <!-- <?php require 'navigationBar4admin.php' ?> -->
   <div class="container">
-
-    <!-- Button to Go back to home page -->
-    <a class="btn btn-outline-primary back-button" role="button" href="index.php">◀️ Back</a>
-
-
-    <?php
-    if(isset($_GET['signup'])) {
-      $val = $_GET['signup'];
-      if($val == 'success'){
-        // if user added is success
-        echo '<div class="alert alert-success">User Added Successfully</div>';
-      }
-      else if($val == 'fail'){
-        echo '<div class="alert alert-danger">Please fill all neccessory details</div>';
-      }
-    }
-
-    if(isset($_GET['password'])) {
-      $val = $_GET['password'];
-      if($val == 'success'){
-        // if user added is success
-        echo '<div class="alert alert-success">User Added Successfully</div>';
-      }
-      else if($val == 'fail'){
-        echo '<div class="alert alert-danger">Password not match</div>';
-      }
-    }
-
-    ?>
 
     <!-- Form to take input -->
     <div id="details-form" style="margin-top:1%">
@@ -64,7 +36,4 @@
     </div>
 
   </div>
-  <?php require 'footer.php'; ?>
-</body>
-
-</html>
+<?php require '../layouts/footer.php'; ?>

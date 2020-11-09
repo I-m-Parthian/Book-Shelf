@@ -1,6 +1,3 @@
-<?php
-  include_once 'includes/dbh.php';
-?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -20,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
   <!-- custom styling -->
-  <link rel="stylesheet" href="styling/style.css">
+  <link rel="stylesheet" href="../../styling/style.css">
 
 </head>
+
+<body>

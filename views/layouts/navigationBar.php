@@ -31,7 +31,7 @@
     <button class="btn btn-secondary dropdown-toggle" type="button" id="sessionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Hi User
     </button>
-    <div class="dropdown-menu" aria-labelledby="sessionDropdown">
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sessionDropdown">
       <a class="dropdown-item" href="adminDashboard.php">Dashboard</a>
       <a class="dropdown-item" href="includes/logout.controller.php">Log Out</a>
     </div>

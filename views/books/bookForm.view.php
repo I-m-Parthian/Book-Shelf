@@ -1,10 +1,9 @@
 <?php
-  include "header.php"
+  require '../layouts/header.php';
+  require '../layouts/navigationBar.php';
 ?>
-<body>
-  <?php require 'navigationBar4admin.php' ?>
   <div class="container">
-    <?php
+    <!-- <?php
     if(isset($_GET['upload'])) {
       $val = $_GET['upload'];
       if($val == 'success'){
@@ -14,11 +13,11 @@
         echo '<div class="alert alert-danger">Please fill all neccessory details</div>';
       }
     }
-    ?>
+    ?> -->
 
 
     <!-- Button to Go back to home page -->
-    <a class="btn btn-outline-primary back-button" role="button" href="index.php">◀️ Back</a>
+    <!-- <a class="btn btn-outline-primary back-button" role="button" href="index.php">◀️ Back</a> -->
 
     <!-- Form to take input -->
     <div id="details-form" style="margin-top:1%">
@@ -45,13 +44,15 @@
           <input type="file" accept="image/*" class="form-control-file" name="ImageFile">
         </div>
 
+        <div class="form-group">
+          <label class="form-check-label" for="NumberInput">Number of Copies<span class="text-danger">*</span></label>
+          <input type="number" class="form-check-label" name="copies" style="width:50px;">
+        </div>
+
         <input type="submit" class="btn btn-success" name="submit" value="Submit">
 
       </form>
     </div>
 
   </div>
-  <?php require 'footer.php'; ?>
-</body>
-
-</html>
+  <?php require '../layouts/footer.php'; ?>

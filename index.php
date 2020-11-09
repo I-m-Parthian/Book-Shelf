@@ -1,5 +1,2 @@
-<?php
-  include 'header.php';
-  require 'login.view.php';
-  
- ?>
+
+<h1>hello</h1>

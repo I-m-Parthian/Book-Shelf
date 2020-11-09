@@ -1,5 +1,5 @@
-<?php require 'header.php'; ?>
-<body>
+<?php require '../layouts/header.php'; ?>
+<?php require '../layouts/navigationBar.php'; ?>
   <div class="container mt-4">
     <div class="row row-col-2">
       <div class="col-6">
@@ -29,4 +29,4 @@
       </div>
     </div>
   </div>
-</body>
+<?php require '../layouts/footer.php'; ?>
