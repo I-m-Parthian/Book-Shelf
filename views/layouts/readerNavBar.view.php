@@ -13,19 +13,7 @@
           <a class="dropdown-item" href="landing-page.php">Wishlist</a>
           <a class="dropdown-item" href="landing-page.php">Currently reading</a>
           <a class="dropdown-item" href="landing-page.php">Already read</a>
-          <a class="dropdown-item" href="Books-adding-form.php">Add a book</a>
-          <a class="dropdown-item" href="landing-page.php">Delete/Edit a book</a>
-        </div>
-      </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="UserDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          User Manager
-        </a>
-        <div class="dropdown-menu" aria-labelledby="UserDropdown">
-          <a class="dropdown-item" href="Books-adding-form.php">view user</a>
-          <a class="dropdown-item" href="Books-adding-form.php">add a user</a>
-          <a class="dropdown-item" href="landing-page.php">delete/edit a user</a>
         </div>
       </li>
   </ul>

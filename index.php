@@ -1,2 +1,7 @@
+<?php
 
-<h1>hello</h1>
+  require 'authentication.php';
+
+
+  // authentication complete. Redirect to dashboard controller
+  header('Location: /BookShelf/controller/dashboardController.php');

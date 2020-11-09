@@ -1,12 +1,14 @@
-<?php require '../layouts/header.php'; ?>
+<?php require '/opt/lampp/htdocs/BookShelf/views/layouts/header.php'; ?>
 <?php require '../layouts/navigationBar.php'; ?>
   <div class="container mt-4">
     <div class="row row-col-2">
       <div class="col-6">
         <ul class="list-group">
           <li class="list-group-item bg-secondary text-light"><h3>Manage Books</h3></li>
-          <li class="list-group-item"><a href="bookList.view.php">View Books</a></li>
-          <li class="list-group-item">See Wishlist</li>
+          <li class="list-group-item"><a href="bookList.view.php">All Books</a></li>
+          <li class="list-group-item">Wishlist</li>
+          <li class="list-group-item">Currently reading</li>
+          <li class="list-group-item">Already Read</li>
           <li class="list-group-item"><a href="Books-adding-form.php">Add a Book</a></li>
           <li class="list-group-item">Edit/Delete a Book</li>
 
@@ -29,4 +31,4 @@
       </div>
     </div>
   </div>
-<?php require '../layouts/footer.php'; ?>
+<?php require '/opt/lampp/htdocs/BookShelf/views/layouts/footer.php'; ?>

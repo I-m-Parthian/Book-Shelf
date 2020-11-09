@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
   <!-- custom styling -->
-  <link rel="stylesheet" href="../../styling/style.css">
+  <link rel="stylesheet" href="/BookShelf/styling/style.css">
 
 </head>
 
